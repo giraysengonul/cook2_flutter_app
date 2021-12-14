@@ -2,8 +2,10 @@ import 'package:flutter/material.dart';
 
 BottomNavigationBar buildBottomNavigationBar(int _selectedIndex, _select) {
   return BottomNavigationBar(
+
     selectedItemColor: Colors.redAccent,
     unselectedItemColor: Colors.grey,
+
     onTap: _select,
     currentIndex: _selectedIndex,
     items: const [

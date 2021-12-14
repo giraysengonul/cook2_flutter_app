@@ -10,11 +10,13 @@ Container text_field(
     height: 50.0,
     width: double.infinity,
     child: TextField(
+
       controller: controller,
       cursorColor: Colors.red,
       style: TextStyle(color: Colors.black),
       textAlign: TextAlign.start,
       decoration: InputDecoration(
+        prefixIconColor: globalRedAccent,
         prefixIcon: IconButton(
             onPressed: () {},
             icon: Icon(

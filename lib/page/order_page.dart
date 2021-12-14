@@ -1,8 +1,11 @@
 // ignore_for_file: camel_case_types, sized_box_for_whitespace, prefer_const_literals_to_create_immutables, non_constant_identifier_names
 
+import 'package:cook2_flutter_app/model/featureCards.dart';
 import 'package:cook2_flutter_app/ui/helper/global_color.dart';
 import 'package:cook2_flutter_app/ui/helper/icon_page.dart';
 import 'package:cook2_flutter_app/ui/helper/textStyle_page.dart';
+import 'package:cook2_flutter_app/ui/widget/featureCardsDetails.dart';
+import 'package:cook2_flutter_app/ui/widget/tabBar_widget.dart';
 import 'package:cook2_flutter_app/ui/widget/text_field.dart';
 import 'package:flutter/material.dart';
 
@@ -15,6 +18,8 @@ class orderPage extends StatefulWidget {
 
 class _orderPageState extends State<orderPage> {
   TextEditingController searchController = TextEditingController();
+
+  @override
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -69,11 +74,29 @@ class _orderPageState extends State<orderPage> {
             SizedBox(
               height: 10.0,
             ),
+
             //--------------------tabBar--------------
+            tabBarWidget(),
+            SizedBox(
+              height: 15.0,
+            ),
+
             Container(
-              height: 230.0,
+              height: 100.0,
               width: double.infinity,
-              color: Colors.blue,
+              decoration: BoxDecoration(
+                color: Colors.transparent,
+                borderRadius: BorderRadius.circular(20.0),
+              ),
+              child: ListView.builder(
+                  scrollDirection: Axis.horizontal,
+                  itemCount: featureCardsExample.length,
+                  itemBuilder: (BuildContext context, int index) {
+                    return featureCardsDetails(
+                      imgUrl: featureCardsExample[index].imgUrl.toString(),
+                      title: featureCardsExample[index].title.toString(),
+                    );
+                  }),
             ),
           ],
         ),
