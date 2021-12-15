@@ -2,16 +2,16 @@
 // ignore_for_file: use_key_in_widget_constructors, camel_case_types, sized_box_for_whitespace, prefer_const_literals_to_create_immutables
 
 import 'package:cook2_flutter_app/ui/helper/global_color.dart';
-import 'package:cook2_flutter_app/ui/style/featureCardsDetailsTStyle.dart';
+import 'package:cook2_flutter_app/ui/style/feature_cards_detailsTStyle.dart';
 import 'package:cook2_flutter_app/ui/style/menuCardStyle.dart';
 import 'package:flutter/material.dart';
 
-class menuCardDetails extends StatelessWidget {
+class MenuCardDetails extends StatelessWidget {
   final String imgUrl;
   final String name;
   final String surname;
 
-  const menuCardDetails(
+  const MenuCardDetails(
       {Key? key,
       required this.imgUrl,
       required this.name,
@@ -51,19 +51,19 @@ class menuCardDetails extends StatelessWidget {
                       name,
                       overflow: TextOverflow.ellipsis,
                       softWrap: false,
-                      style: menuCardStyle(Colors.black, FontWeight.bold),
+                      style: MenuCardStyle(Colors.black, FontWeight.bold),
                     ),
                     Text(
                       surname,
                       overflow: TextOverflow.ellipsis,
                       softWrap: false,
-                      style: menuCardStyle(Colors.grey, FontWeight.w500),
+                      style: MenuCardStyle(Colors.grey, FontWeight.w500),
                     ),
                     Text(
                       "50 % OFF USE CODE ZOMATO",
                       overflow: TextOverflow.ellipsis,
                       softWrap: false,
-                      style: menuCardStyle(globalRedAccent, FontWeight.w400),
+                      style: MenuCardStyle(globalRedAccent, FontWeight.w400),
                     ),
                   ],
                 ),
@@ -81,7 +81,7 @@ class menuCardDetails extends StatelessWidget {
                 child: Center(
                   child: Text(
                     "4.7",
-                    style: menuCardStyle(Colors.white, FontWeight.bold),
+                    style: MenuCardStyle(Colors.white, FontWeight.bold),
                   ),
                 ),
               ),

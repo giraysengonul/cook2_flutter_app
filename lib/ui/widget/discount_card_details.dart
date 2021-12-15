@@ -6,7 +6,7 @@ import 'package:cook2_flutter_app/model/discountCard.dart';
 import 'package:cook2_flutter_app/ui/style/textStyle.dart';
 import 'package:flutter/material.dart';
 
-class detailsCard extends StatelessWidget  {
+class DetailsCard extends StatelessWidget  {
 
   final String ImgUrl;
   final String name1;
@@ -14,7 +14,7 @@ class detailsCard extends StatelessWidget  {
   final String name2;
 
 
-  const detailsCard({Key? key, required this.ImgUrl,required this.name1,required this.discountt,required this.name2, }) : super(key: key);
+  const DetailsCard({Key? key, required this.ImgUrl,required this.name1,required this.discountt,required this.name2, }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

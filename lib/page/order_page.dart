@@ -6,22 +6,22 @@ import 'package:cook2_flutter_app/model/menuCard.dart';
 import 'package:cook2_flutter_app/ui/helper/global_color.dart';
 import 'package:cook2_flutter_app/ui/helper/icon_page.dart';
 import 'package:cook2_flutter_app/ui/helper/textStyle_page.dart';
-import 'package:cook2_flutter_app/ui/widget/featureCardsDetails.dart';
-import 'package:cook2_flutter_app/ui/widget/featuresWidget.dart';
-import 'package:cook2_flutter_app/ui/widget/menuCardWidget.dart';
-import 'package:cook2_flutter_app/ui/widget/menuWidget.dart';
+import 'package:cook2_flutter_app/ui/widget/feature_cards_details.dart';
+import 'package:cook2_flutter_app/ui/widget/features_widget.dart';
+import 'package:cook2_flutter_app/ui/widget/menu_card_widget.dart';
+import 'package:cook2_flutter_app/ui/widget/menu_widget.dart';
 import 'package:cook2_flutter_app/ui/widget/tabBar_widget.dart';
 import 'package:cook2_flutter_app/ui/widget/text_field.dart';
 import 'package:flutter/material.dart';
 
-class orderPage extends StatefulWidget {
-  const orderPage({Key? key}) : super(key: key);
+class OrderPage extends StatefulWidget {
+  const OrderPage({Key? key}) : super(key: key);
 
   @override
-  _orderPageState createState() => _orderPageState();
+  _OrderPageState createState() => _OrderPageState();
 }
 
-class _orderPageState extends State<orderPage> {
+class _OrderPageState extends State<OrderPage> {
   TextEditingController searchController = TextEditingController();
 
   @override
@@ -52,7 +52,7 @@ class _orderPageState extends State<orderPage> {
                         ),
                         Text(
                           "234-Mars, Hakkı",
-                          style: nameLocationTextStyle,
+                          style: NameLocationTextStyle,
                         ),
                       ],
                     ),
@@ -76,23 +76,23 @@ class _orderPageState extends State<orderPage> {
                 height: 8.0,
               ),
               //--------------------TextField-----------
-              text_field(searchController),
+              Text_Field(searchController),
               SizedBox(
                 height: 10.0,
               ),
 
               //--------------------tabBar--------------
-              tabBarWidget(),
+              TabBarWidget(),
               SizedBox(
                 height: 15.0,
               ),
               //-------------------features-------------
-              featuresWidget(),
+              FeaturesWidget(),
               SizedBox(
                 height: 10.0,
               ),
               //-------------------menu-----------------
-              menuCardWidget(),
+              MenuCardWidget(),
             ],
           ),
         ),

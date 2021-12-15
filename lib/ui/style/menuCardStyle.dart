@@ -3,7 +3,7 @@
 
 import 'package:flutter/material.dart';
 
-TextStyle menuCardStyle(Color color, FontWeight fontWeight) {
+TextStyle MenuCardStyle(Color color, FontWeight fontWeight) {
   return TextStyle(
     fontWeight: fontWeight,
     color: color,

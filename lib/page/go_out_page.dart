@@ -2,14 +2,14 @@
 
 import 'package:flutter/material.dart';
 
-class goOutPage extends StatefulWidget {
-  const goOutPage({Key? key}) : super(key: key);
+class GoOutPage extends StatefulWidget {
+  const GoOutPage({Key? key}) : super(key: key);
 
   @override
-  _goOutPageState createState() => _goOutPageState();
+  _GoOutPageState createState() => _GoOutPageState();
 }
 
-class _goOutPageState extends State<goOutPage> {
+class _GoOutPageState extends State<GoOutPage> {
   @override
   Widget build(BuildContext context) {
     return Container(

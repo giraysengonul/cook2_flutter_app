@@ -2,14 +2,14 @@
 
 import 'package:flutter/material.dart';
 
-class goldPage extends StatefulWidget {
-  const goldPage({Key? key}) : super(key: key);
+class GoldPage extends StatefulWidget {
+  const GoldPage({Key? key}) : super(key: key);
 
   @override
-  _goldPageState createState() => _goldPageState();
+  _GoldPageState createState() => _GoldPageState();
 }
 
-class _goldPageState extends State<goldPage> {
+class _GoldPageState extends State<GoldPage> {
   @override
   Widget build(BuildContext context) {
     return Container(

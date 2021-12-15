@@ -1,13 +1,13 @@
 
 // ignore_for_file: camel_case_types, use_key_in_widget_constructors, sized_box_for_whitespace, prefer_const_literals_to_create_immutables
 
-import 'package:cook2_flutter_app/ui/style/featureCardsDetailsTStyle.dart';
+import 'package:cook2_flutter_app/ui/style/feature_cards_detailsTStyle.dart';
 import 'package:flutter/material.dart';
 
-class featureCardsDetails extends StatelessWidget {
+class FeatureCardsDetails extends StatelessWidget {
   final String imgUrl;
   final String title;
-  const featureCardsDetails(
+  const FeatureCardsDetails(
       {Key? key, required this.imgUrl, required this.title})
       : super(key: key);
 
@@ -52,7 +52,7 @@ class featureCardsDetails extends StatelessWidget {
                     title,
                     overflow: TextOverflow.fade,
                     softWrap: false,
-                    style: featureCDTStyle,
+                    style: FeatureCDTStyle,
                   ),
                 ],
               ),

@@ -2,14 +2,14 @@
 
 import 'package:flutter/material.dart';
 
-class sneakPeekPage extends StatefulWidget {
-  const sneakPeekPage({Key? key}) : super(key: key);
+class SneakPeekPage extends StatefulWidget {
+  const SneakPeekPage({Key? key}) : super(key: key);
 
   @override
-  _sneakPeekPageState createState() => _sneakPeekPageState();
+  _SneakPeekPageState createState() => _SneakPeekPageState();
 }
 
-class _sneakPeekPageState extends State<sneakPeekPage> {
+class _SneakPeekPageState extends State<SneakPeekPage> {
   @override
   Widget build(BuildContext context) {
     return Container(

@@ -3,7 +3,7 @@
 import 'package:cook2_flutter_app/ui/helper/global_color.dart';
 import 'package:flutter/material.dart';
 
-Container text_field(
+Container Text_Field(
   TextEditingController controller,
 ) {
   return Container(

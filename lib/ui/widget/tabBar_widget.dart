@@ -2,10 +2,11 @@
 
 import 'package:cook2_flutter_app/model/discountCard.dart';
 import 'package:cook2_flutter_app/ui/helper/global_color.dart';
-import 'package:cook2_flutter_app/ui/widget/discountCardDetails.dart';
+import 'package:cook2_flutter_app/ui/widget/discount_card_details.dart';
 import 'package:flutter/material.dart';
 
-Container tabBarWidget() {
+// ignore: non_constant_identifier_names
+Container TabBarWidget() {
   return Container(
     height: 300.0,
     width: double.infinity,
@@ -42,7 +43,7 @@ Container tabBarWidget() {
                     scrollDirection: Axis.horizontal,
                     itemCount: discountCardExample.length,
                     itemBuilder: (BuildContext context, int index) {
-                      return detailsCard(
+                      return DetailsCard(
                           ImgUrl: discountCardExample[index].imgUrl.toString(),
                           name1: discountCardExample[index].name.toString(),
                           discountt:

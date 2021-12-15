@@ -5,9 +5,9 @@
 import 'package:cook2_flutter_app/model/menuCard.dart';
 import 'package:flutter/material.dart';
 
-import 'menuWidget.dart';
+import 'menu_widget.dart';
 
-Container menuCardWidget() {
+Container MenuCardWidget() {
   return Container(
     height: 300.0,
     width: double.infinity,
@@ -16,7 +16,7 @@ Container menuCardWidget() {
         padding: EdgeInsets.only(bottom: 10.0),
         itemCount: menuCardExample.length,
         itemBuilder: (BuildContext context, int index) {
-          return menuCardDetails(
+          return MenuCardDetails(
             imgUrl: menuCardExample[index].imgUrl.toString(),
             name: menuCardExample[index].name.toString(),
             surname: menuCardExample[index].surname.toString(),
