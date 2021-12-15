@@ -22,30 +22,30 @@ class featureCards {
   }
 }
 
-List<featureCards>  featureCardsExample =[
+List<featureCards> featureCardsExample = [
   featureCards(
     imgUrl:
-    "https://cdn.pixabay.com/photo/2018/04/18/20/07/delivery-truck-3331471_1280.png",
+        "https://cdn.pixabay.com/photo/2018/04/18/20/07/delivery-truck-3331471_1280.png",
     title: "Express Delivery",
   ),
   featureCards(
     imgUrl:
-    "https://cdn.pixabay.com/photo/2016/12/18/12/49/cyber-security-1915628_1280.png",
+        "https://cdn.pixabay.com/photo/2016/12/18/12/49/cyber-security-1915628_1280.png",
     title: "Safely Sealed",
   ),
   featureCards(
     imgUrl:
-    "https://cdn.pixabay.com/photo/2021/04/16/12/38/discount-6183488_1280.png",
+        "https://cdn.pixabay.com/photo/2021/04/16/12/38/discount-6183488_1280.png",
     title: "Great Offers",
   ),
   featureCards(
     imgUrl:
-    "https://cdn.pixabay.com/photo/2015/10/31/12/24/reception-1015489__480.jpg",
+        "https://cdn.pixabay.com/photo/2015/10/31/12/24/reception-1015489__480.jpg",
     title: "New Arrivals",
   ),
   featureCards(
     imgUrl:
-    "https://cdn.pixabay.com/photo/2017/03/30/06/29/egg-2187345__480.png",
+        "https://cdn.pixabay.com/photo/2017/03/30/06/29/egg-2187345__480.png",
     title: "Trending Places",
   ),
 ];

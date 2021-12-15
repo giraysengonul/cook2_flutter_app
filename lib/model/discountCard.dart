@@ -30,7 +30,7 @@ List <discountCard> discountCardExample = [
   discountCard(
     name: "EPIC DEALS",
     imgUrl:
-    "https://cdn.pixabay.com/photo/2016/03/05/19/02/hamburger-1238246_1280.jpg",
+    "https://cdn.pixabay.com/photo/2014/06/11/17/00/food-366875__480.jpg",
     explanation: "On legendary restaurants",
     discount: 40,
   ),
